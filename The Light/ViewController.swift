@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var isLightOn: Bool = false
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    var isLightOn: Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
